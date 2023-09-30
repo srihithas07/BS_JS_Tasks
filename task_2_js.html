@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task-2</title>
+    <script>
+        function Sort() {
+            var inputString = document.getElementById("x").value;
+            var sortedString = inputString.split('').sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())).join('');
+            document.getElementById('result').textContent = sortedString;
+        }
+    </script>
+</head>
+<body>
+    <h2>String in Alphabetical Order</h2>
+    Enter String: <input type="text" id="x"><button onclick="Sort()">Submit</button><br><br>
+    Result: <span id="result"></span>
+</body>
+</html>
